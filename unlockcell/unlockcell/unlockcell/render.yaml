@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: unlockcell
+    runtime: node
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: CONFIRMEPAY_SECRET_KEY
+        value: sk_d3c9233c604f150d0f810b260d99407cfdcf0bc6f06794dcc51b46fda8b2d4ec529a6eff355443491705ca67d325550ded7f7a36edc9198ef73a84bb9b0943ad
